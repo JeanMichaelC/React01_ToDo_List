@@ -1,17 +1,26 @@
 import React from 'react';
-// import './TodoList.css'
+import styled from 'styled-components';
+
+
+
 type TodoListProps = {
 	children: React.ReactNode
 }
-
 function TodoList({ children }: TodoListProps) {
     return (
         <section>
-            <ul>
+            <StyledUl>
                 {children}
-            </ul>
+            </StyledUl>
         </section>
     );
 }
-
 export { TodoList };
+
+
+
+const StyledUl = styled.ul`
+	margin: 0;
+	padding: 0 0 56px 0;
+	list-style: none;
+`;

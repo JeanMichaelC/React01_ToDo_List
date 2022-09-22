@@ -6,5 +6,5 @@ const rootNode = document.getElementById('root');
 
 //Null Check for the root node
 if (rootNode) {
-	createRoot(rootNode).render(<App message={"Made with Styled!"} greenMode/>);
+	createRoot(rootNode).render(<App/>);
 }
